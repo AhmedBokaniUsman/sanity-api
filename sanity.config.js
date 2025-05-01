@@ -7,8 +7,9 @@ export default defineConfig({
   name: 'default',
   title: 'realestate',
 
-  projectId: process.env.SANITY_PROJECT_ID,
-  dataset: process.env.SANITY_DATASET,
+  projectId: '7qflttjf',
+  dataset: 'production'
+  ,
 
   plugins: [structureTool(), visionTool()],
 
