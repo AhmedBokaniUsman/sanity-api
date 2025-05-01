@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"  # Build the Sanity Studio
+  publish = "dist"  # Folder where Sanity Studio will be built
+
+[build.environment]
+  SANITY_PROJECT_ID = "your-sanity-project-id"
+  SANITY_DATASET = "your-sanity-dataset"
+
+[[redirects]]
+  from = "/sanity/*"
+  to = "/sanity/index.html"
+  status = 200
