@@ -11,16 +11,6 @@ export default {
         type: 'string',
       },
       {
-        name: 'description',
-        title: 'Description',
-        type: 'text',
-      },
-      {
-        name: 'price',
-        title: 'Price',
-        type: 'number',
-      },
-      {
         name: 'location',
         title: 'Location',
         type: 'string',
