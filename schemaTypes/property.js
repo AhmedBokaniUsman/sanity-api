@@ -29,6 +29,46 @@ export default {
           },
         ],
       },
+      {
+        name: 'bedrooms',
+        title: 'Number of Bedrooms',
+        type: 'number',
+        validation: Rule => Rule.required().min(0),
+      },
+      {
+        name: 'bathrooms',
+        title: 'Number of Bathrooms',
+        type: 'number',
+        validation: Rule => Rule.required().min(0),
+      },
+      {
+        name: 'propertyType',
+        title: 'Property Type',
+        type: 'string',
+        options: {
+          list: [
+            { title: 'House', value: 'House' },
+            { title: 'Flat', value: 'Flat' },
+            { title: 'Apartment', value: 'Apartment' },
+            { title: 'Bungalow', value: 'Bungalow' },
+            { title: 'Studio', value: 'Studio' },
+            { title: 'Other', value: 'Other' },
+          ],
+        },
+        validation: Rule => Rule.required(),
+      },
+      {
+        name: 'price',
+        title: 'Price',
+        type: 'number',
+        description: 'Property price in pounds (optional)',
+      },
+      {
+        name: 'description',
+        title: 'Description',
+        type: 'text',
+        rows: 4,
+      },
     ],
   };
   
