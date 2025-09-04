@@ -3,8 +3,8 @@
   publish = "dist"  # Folder where Sanity Studio will be built
 
 [build.environment]
-  SANITY_PROJECT_ID = "your-sanity-project-id"
-  SANITY_DATASET = "your-sanity-dataset"
+  SANITY_PROJECT_ID = "7qflttjf"
+  SANITY_DATASET = "production"
 
 [[redirects]]
   from = "/sanity/*"
